@@ -26,7 +26,7 @@ function ajsInclude() {
 }
 function getAndRemove(el, atr) {
   var cond = el.getAttribute(atr);
-  el.removeAttribute("aji-if");
+  el.removeAttribute("ajs-if");
   return cond;
 }
 // self calling
@@ -36,8 +36,7 @@ function checkIf() {
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
     el = z[i];
-    con = getAndRemove(el,'aji-if');
-    // con = el.getAttribute("aji-if");
+    con = getAndRemove(el,'ajs-if');
     if (con) {
       if (eval(con)) {
         return;
