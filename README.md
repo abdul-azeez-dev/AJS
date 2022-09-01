@@ -22,5 +22,5 @@ var username = "John";
 
 ````html
 <!--HTML -->
- <span ajs-if="username == 'hello'">   success! </span>
+ <span ajs-if="username == 'John'">Hello user!</span>
 ````
